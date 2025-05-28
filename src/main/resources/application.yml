@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/samdi
+    username: 내 이름임
+    password: 내 비번임 털리면 안되니까 이렇게 바꿀게
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+server:
+  port: 8080
