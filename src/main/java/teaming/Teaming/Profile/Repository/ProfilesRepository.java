@@ -1,7 +1,7 @@
-package teaming.project_teaming.Profile;
+package teaming.Teaming.Profile.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import teaming.project_teaming.Profile.Domain.Profiles;
+import teaming.Teaming.Profile.Domain.Profiles;
 
 import java.util.Optional;
 

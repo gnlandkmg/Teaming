@@ -1,4 +1,4 @@
-package teaming.project_teaming.Profile.Domain;
+package teaming.Teaming.Profile.Domain;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -18,7 +18,7 @@ public class Profiles {
     //    @Column(nullable = false)
 //    private String title;
     @Column(nullable = false)
-    private String title;
+    private String circle;
     @Setter
-    private String content;
+    private String major;
 }

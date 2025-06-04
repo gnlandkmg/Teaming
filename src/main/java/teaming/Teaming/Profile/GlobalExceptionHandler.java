@@ -1,4 +1,4 @@
-package teaming.project_teaming.Profile;
+package teaming.Teaming.Profile;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

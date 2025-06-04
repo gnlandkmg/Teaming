@@ -1,11 +1,11 @@
-package teaming.project_teaming.Profile.Controller;
+package teaming.Teaming.Profile.Controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import teaming.project_teaming.Profile.DecoService;
-import teaming.project_teaming.Profile.DTO.CreateDecoRequest;
-import teaming.project_teaming.Profile.DTO.ProfileResponse;
-import teaming.project_teaming.Profile.DTO.UpdateProfiles;
+import teaming.Teaming.Profile.Service.DecoService;
+import teaming.Teaming.Profile.DTO.CreateDecoRequest;
+import teaming.Teaming.Profile.DTO.ProfileResponse;
+import teaming.Teaming.Profile.DTO.UpdateProfiles;
 
 import java.util.List;
 

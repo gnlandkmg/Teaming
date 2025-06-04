@@ -1,11 +1,12 @@
-package teaming.project_teaming.Profile;
+package teaming.Teaming.Profile.Service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import teaming.project_teaming.Profile.Domain.Profiles;
-import teaming.project_teaming.Profile.DTO.CreateDecoRequest;
-import teaming.project_teaming.Profile.DTO.ProfileResponse;
-import teaming.project_teaming.Profile.DTO.UpdateProfiles;
+import teaming.Teaming.Profile.Domain.Profiles;
+import teaming.Teaming.Profile.DTO.CreateDecoRequest;
+import teaming.Teaming.Profile.DTO.ProfileResponse;
+import teaming.Teaming.Profile.DTO.UpdateProfiles;
+import teaming.Teaming.Profile.Repository.ProfilesRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,8 +19,8 @@ public class DecoService {
 
     public void createDeco(CreateDecoRequest request) {
         Profiles profiles = Profiles.builder()
-                .title(request.title())
-                .content(request.content())
+                .major(request.major())
+                .circle(request.circle())
                 .build();
 
         ProfilesRepository.save(profiles);
@@ -53,7 +54,7 @@ public class DecoService {
         if (e == null) {
             throw new IllegalArgumentException(request.id() +"는 없는 프로필입니다.");
         }
-        e.setContent(request.content());
+        e.setMajor(request.major());
 
         ProfilesRepository.save(e);
 
