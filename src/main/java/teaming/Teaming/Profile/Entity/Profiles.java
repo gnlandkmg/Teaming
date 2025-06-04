@@ -15,10 +15,13 @@ import lombok.experimental.SuperBuilder;
 public class Profiles {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    //    @Column(nullable = false)
-//    private String title;
+
     @Column(nullable = false)
     private String circle;
+
     @Setter
     private String major;
+
+    @Setter
+    private String username;
 }
